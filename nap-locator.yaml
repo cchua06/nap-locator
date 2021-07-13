@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
   - name: nap-locator
-    image: ptrck0321/nap-locator
+    image: nginx
     imagePullPolicy: IfNotPresent
   nodeSelector:
     roles: worker
