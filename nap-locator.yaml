@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nap-locator
+  labels:
+    env: test
+spec:
+  containers:
+  - name: nap-locator
+    image: ptrck0321/nap-locator
+    imagePullPolicy: IfNotPresent
+  nodeSelector:
+    roles: worker
